@@ -1,0 +1,158 @@
+<form id="formWizard" action="" method="post">
+    <!-- Step 1 -->
+    <div class="step active" id="step1">
+        <!-- Content for Step 1 -->
+        <div class="title">
+            <h2>You are now filling the data for:</h2>
+            <!-- Period selection components -->
+            <div class="select-style-1">
+                <label>Periode</label>
+                <div class="select-position">
+                    <select id="monthSelect">
+                        <option value="">April</option>
+                    </select>
+                </div>
+            </div>
+            <div class="select-style-1">
+                <label>Year</label>
+                <div class="select-position">
+                    <select id="yearSelect">
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card-style mb-30">
+            <h4 class="mb-20">Total Karyawan berdasarkan Gender</h4>
+            <div class="input-style-1">
+                <label>Pria</label>
+                <input type="text" placeholder="Masukkan Jumlah Pria" />
+            </div>
+            <div class="input-style-2">
+                <label>Wanita</label>
+                <input type="text" placeholder="Masukkan Jumlah Wanita" />
+            </div>
+
+            <h6 class="mb-10">Total Pekerja Outsource</h6>
+            <div class="input-style-1">
+                <label>Pria</label>
+                <input type="text" placeholder="Masukkan Jumlah Pria" />
+            </div>
+            <div class="input-style-2">
+                <label>Wanita</label>
+                <input type="text" placeholder="Masukkan Jumlah Wanita" />
+            </div>
+
+            <h6 class="mb-10">Penerimaan Karyawan Tetap Baru</h6>
+            <div class="input-style-1">
+                <label>Pria</label>
+                <input type="text" placeholder="Masukkan Jumlah Pria" />
+            </div>
+            <div class="input-style-2">
+                <label>Wanita</label>
+                <input type="text" placeholder="Masukkan Jumlah Wanita" />
+            </div>
+
+            <h6 class="mb-10">Jumlah Pelamar Kerja</h6>
+            <div class="input-style-1">
+                <label>Pria</label>
+                <input type="text" placeholder="Masukkan Jumlah Pria" />
+            </div>
+            <div class="input-style-2">
+                <label>Wanita</label>
+                <input type="text" placeholder="Masukkan Jumlah Wanita" />
+            </div>
+        </div>
+
+        <div class="card-style mb-30">
+            <h4 class="mb-20">Data Pelatihan Karyawan</h4>
+            <h6 class="mb-10">Berdasarkan Kelompok Gender</h6>
+            <div class="input-style-1">
+                <label> Pria </label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pekerja" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pelatihan" />
+                        </div>
+                    </div>
+                </div> <br />
+                <label> Wanita </label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pekerja" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pelatihan" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6 class="mb-10">Karyawan Berdasarkan Kelompok Jabatan</h6>
+            <div class="input-style-1">
+                <label> Golongan 5 </label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pekerja" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pelatihan" />
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <label> Non Golongan - Golongan 4 </label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pekerja" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Jumlah Pelatihan" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Berdasar Gender -->
+        </div>
+        <!-- Total Karyawan berdasarkan Gender and related fields -->
+        <!-- Data Pelatihan Karyawan sections -->
+        <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step" id="step2">
+        <!-- Content for Step 2 -->
+        <div class="title">
+            <h2>Step 2: Detailed Employee Information</h2>
+        </div>
+        <!-- Karyawan berdasarkan kelompok usia and related sections -->
+        <!-- Karyawan berdasarkan masa kerja, tingkat pendidikan -->
+        <button type="button" class="btn btn-primary" onclick="prevStep()">Previous</button>
+        <button type="button" class="btn btn-primary" onclick="nextStep()">Next</button>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step" id="step3">
+        <!-- Content for Step 3 -->
+        <div class="title">
+            <h2>Step 3: Employee Turnover and Outsourcing</h2>
+        </div>
+        <!-- Employee Turnover sections -->
+        <!-- Direct - Indirect Labour, Outsourcing -->
+        <button type="button" class="btn btn-primary" onclick="prevStep()">Previous</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+</form>
